@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-yellow: #fcf4ba;
+    --paper-line: #ebdca2;
+    --paper-margin: #f48a8a;
+    --ink-dark: #1b2432;
+    --ink-faded: #64748b;
+    --ink-strike: #202a3a;
+  }
+
+  body {
+    background-color: #2b2520;
+    background-image: 
+      radial-gradient(#3c332b 1px, transparent 1px),
+      linear-gradient(135deg, #1f1a16 0%, #2e2621 50%, #1e1915 100%);
+    background-size: 24px 24px, 100% 100%;
+    color: var(--ink-dark);
+    font-family: 'Patrick Hand', 'Kalam', 'Caveat', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Notebook styling */
+.notebook-paper {
+  background-color: #fbf2b7;
+  background-image: 
+    linear-gradient(to right, rgba(239, 68, 68, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, transparent 39px, rgba(199, 182, 126, 0.45) 39px, rgba(199, 182, 126, 0.45) 41px);
+  background-size: 100% 100%, 100% 41px;
+  background-position: 46px 0, 0 8px;
+  box-shadow: 
+    0 1px 3px rgba(0,0,0,0.12),
+    0 8px 24px rgba(0,0,0,0.28),
+    inset 0 0 40px rgba(224, 202, 134, 0.22);
+}
+
+.notebook-header-band {
+  background: linear-gradient(180deg, #6c2e28 0%, #4a1f1b 75%, #381613 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.perforated-edge {
+  background-image: radial-gradient(circle, #fbf2b7 3px, transparent 3.5px);
+  background-size: 12px 12px;
+  background-position: 0 -6px;
+  background-repeat: repeat-x;
+}
+
+/* Handwritten Typography Classes */
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-kalam {
+  font-family: 'Kalam', cursive;
+}
+
+.font-patrick {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.font-typewriter {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Ink text effects */
+.ink-text {
+  color: #17202e;
+  text-shadow: 0.2px 0.2px 0.5px rgba(23, 32, 46, 0.3);
+}
+
+.ink-crossed {
+  color: #6a7482;
+  text-decoration-color: #1f2937;
+}
+
+/* Custom Scrollbar styled for notepad */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4eaab;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8c98e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bfae6f;
+}
+
+/* Google Sign-In Button Official Styling */
+.gsi-material-button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #747775;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 14px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  transition: background-color .2s, box-shadow .2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.gsi-material-button:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-color: #f8fafd;
+}
+
+.gsi-material-button:active {
+  background-color: #e8eaed;
+}
+
+.gsi-material-button-icon {
+  height: 20px;
+  min-width: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.gsi-material-button-contents {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3c4043;
+}

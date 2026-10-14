@@ -1,0 +1,6 @@
+{
+  "name": "Lista de la compra_by RB",
+  "description": "Lista de la compra estilo libreta de notas vintage con tachado suave, sugerencias sin duplicados y sincronización en la nube.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
