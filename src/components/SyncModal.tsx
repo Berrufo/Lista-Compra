@@ -133,7 +133,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
     const pendingItems = items.filter(i => !i.completed);
     const completedItems = items.filter(i => i.completed);
 
-    let text = `🛒 *Lista de la compra_by RB*\n\n`;
+    let text = `🛒 *Lista de la compra*\n\n`;
     if (pendingItems.length > 0) {
       text += `*Por comprar (${pendingItems.length}):*\n`;
       pendingItems.forEach(item => {
@@ -151,7 +151,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Lista de la compra_by RB',
+          title: 'Lista de la compra',
           text,
         });
       } catch {

@@ -62,9 +62,9 @@ export const NotepadHeader: React.FC<NotepadHeaderProps> = ({
       <div className="px-4 pt-3 pb-2 border-b border-[#ebdca2]">
         <div className="flex items-start justify-between gap-2">
           <div>
-            {/* Title requested exactly: "Lista de la compra_by RB" */}
+            {/* Title */}
             <h1 className="font-kalam text-3xl sm:text-4xl font-bold tracking-tight text-[#1b2332] leading-none">
-              Lista de la compra_by RB
+              Lista de la compra
             </h1>
             <p className="font-handwriting text-lg text-stone-600 mt-0.5">
               Bloc de notas personal • Tacha y organiza

@@ -487,7 +487,7 @@ export default function App() {
 
             {/* Bottom vintage signature footer */}
             <div className="mt-8 pt-4 border-t border-[#ebdca2] flex items-center justify-between text-xs font-handwriting text-stone-600 select-none">
-              <span className="text-base">Lista de la compra_by RB</span>
+              <span className="text-base">Lista de la compra</span>
               <span className="text-sm font-typewriter">© 2026 • Bloc Pastel</span>
             </div>
           </div>
