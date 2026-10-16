@@ -66,7 +66,7 @@ export const NotepadHeader: React.FC<NotepadHeaderProps> = ({
             <h1 className="font-kalam text-3xl sm:text-4xl font-bold tracking-tight text-[#1b2332] leading-none">
               Lista de la compra
             </h1>
-            <p className="font-handwriting text-lg text-stone-600 mt-0.5">
+            <p className="font-handwriting text-[17px] text-stone-600 mt-0.5">
               Bloc de notas personal • Tacha y organiza
             </p>
           </div>
